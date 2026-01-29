@@ -32,4 +32,19 @@ read height
 
 echo ""
 pixelTotal=$(( $width * $height ))
-echo "Your display has ${pixelTotal} pixels." 
+echo "Your display has ${pixelTotal} pixels."
+
+#exercise 1 : Daily Water Intake Goal
+echo "How much do you weigh (kg)?"
+read weight
+
+total_ml=$(( $weight * 30 ))
+liters=$(( total_ml / 1000 ))
+extra_ml=$(( (total_ml % 1000) / 100 ))
+
+echo ""
+echo "Target: You should drink ${total_ml}ml (about ${liters}.${extra_ml}L) of water today!"
+
+#exercise 2 : list the present working directory
+echo ""
+echo "You are currently working in $(pwd)"

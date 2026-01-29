@@ -9,7 +9,7 @@ read third
 
 sum=$(( first+second+third ))
 
-echo "The sum is $sum"
+echo "The total sum is $sum"
 
 echo "Please enter the height"
 read height
@@ -32,4 +32,4 @@ read height
 
 echo ""
 pixelTotal=$(( $width * $height ))
-echo "Your display has ${pixelTotal} pixels." 
+echo "Your display has ${pixelTotal} pixels."
